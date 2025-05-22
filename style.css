@@ -1,0 +1,42 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.fill {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom right, #cfd0bd, #f1f0f3ea);
+    display: inline-flex;
+}
+
+.message {
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: #f1f0f3ea;
+    box-shadow: 0 6px 26px rgba(31, 26, 31, 0.25);
+    width: 100%;
+    height: 95%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  width: fill-available;
+  height: 10%;
+  border-radius: 15px;
+  background-color: #ddd1f3ea;
+}
+
+.sections_you {
+  padding: 40px;
+}
