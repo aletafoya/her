@@ -7,17 +7,47 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="nav">
-        <p class="sections_you"><span class="col" id="first_call">Mi mensaje</span></p>
-        <p class="sections_you"><span class="col" id="second_call">Algo sobre ti</span></p>
-        <p class="sections_you"><span class="col" id="third_call">Tu imagen</span></p>
-        <p class="sections_you"><span class="col" id="fourth_call">Recuerdos</span></p>
-        <p class="sections_you"><span class="col" id="fifth_call">Tú en las letras</span></p>
-        <p class="sections_you"><span class="col" id="sixth_call">Melodías</span></p>
+    <div class="fill">
+        <div class="present">
+            <h1 class="pres">Para ti</h1>
+            <img src="rose.png" alt="rose" class="pres">
+        </div>
+
+        <div class="content">
+            <div class="my_text" id="my_text">
+                <p class="little">Parte de la historia va a parar a las palmas de las manos. Las mías, flacas e indeseables, 
+                cuentan una necesidad; casi siempre moviéndose, creando más arrugas de las habituales, 
+                se desfiguran como olas del mar. Como un ser independiente, siempre buscan a su gemela idéntica, 
+                una réplica suave e inquieta: tu mano. <br> <br>
+                El primer contacto, una inmensidad insondable, crea una patulea de colores, 
+                un tamborileo eterno que representan mis latidos.
+                <br> <br>
+                Tú, que eres luz, que eres esperanza e idilio, luchas por ver la belleza en las cosas. 
+                Eres ese sentimiento de entero deseo por sentirse bien, eres mi raison d’être.
+                
+                <img src="sun.png" alt="my_love" class="rose">
+                <br> <br>
+                Brisia, lo mejor que te puedo dar en la vida no es algo material (aunque también trataré de dártelo), 
+                sino una certeza; esa certeza es tranquilidad, poder decir que nada temes, que vivas la vida enseñando, 
+                como me enseñas a mí, a no tener miedo. Esa certeza es la paz, que llegues a grande y lo único que 
+                desees es revivir lo que experimentaste.
+                <br> <br>
+                <img src="moon.png" alt="moon" class="rose">
+                Por último, quisiera poderte hacer saber lo que haces en la gente, porque, personalmente, en mí sucede. 
+                Que a pesar de ya haber compartido contigo incontables eventos, aún sigo con esa actitud enervante cuando vamos a 
+                crear uno nuevo. Que sepas, Brisia, que cuando estoy solo, cuando nadie parece estar al tanto de mí, 
+                sé que no estoy solo, pues tu simple recuerdo me acompaña, y eso sucederá toda la vida.
+                <br> <br>
+                Mi felicidad está completa desde que te conozco. </p>
+            </div>
+           
+        </div>
+        <div class="pagination">
+                <img src="Prev.png" alt="next" class="pag" id="prev" onclick="previous()">
+                <img src="Next.png" alt="prev" class="pag" id="next" onclick="next()">
+        </div>
     </div>
-    <div class="content_you">
-        <div class="my_text"></div>
-        <img src="rose.png" alt="my_love" class="rose">
-    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
