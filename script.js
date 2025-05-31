@@ -122,7 +122,7 @@ function phrases() {
                 Penetra en mi corazón... "<br><br>
             </p>    
             <p>"Traigo los ojos con que ella miró estas cosas, <br>
-                porque me dio sus <span class="intense">ojos</span> para ver"<br>
+                porque me dio sus <span class="intense">ojos</span> para ver."<br>
                 <br>
             </p>
             <p>"Sie konnte mir kein Wortchen sagen <br>
