@@ -1,4 +1,19 @@
 let where_am_i = 1;
+let played = false;
+
+function music() {
+    if (!played) {
+        const audio = document.getElementById('audio');
+        if (audio) {
+        audio.play().then(() => {
+            played = true;
+            console.log("Music");
+        }).catch((error) => {
+            console.log("Playback failed:", error);
+        });
+        }
+    }
+}
 
 function next() {
     if(where_am_i === 5) {
