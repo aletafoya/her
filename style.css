@@ -3,7 +3,6 @@ html, body {
   padding: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -32,62 +31,23 @@ html, body {
     display: block;
 }
 
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0;
-  width: fill-available;
-  height: 10%;
-  border-radius: 15px;
-  background-color: #ddd1f3ea;
-}
-
-.sections_you {
-  padding: 40px;
-  color: white;
-}
-
-.col:hover {
-  color: #acd3d6ea;
-  cursor: pointer;
-}
-
-.content_you {
-  padding: 40px;
-  padding-top: 20px;
-  margin-top: 20px;
-  width: 100%;
-}
-
-.start {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  border-radius: 15px;
-  border-width: 1px;
-}
-
-.start:hover {
-  background-color: #ddd1f3ea;
-  box-shadow: 0 6px 26px rgba(31, 26, 31, 0.25);
-}
-
 .songs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 15px;
-  border-style: solid;
+  border-style:  solid;
   border-width: 1px;
+  border-color: rgb(228, 204, 217);
   margin-left: 15px;
-  margin-top: 15px;
-  display: block;
+  margin-bottom: 20px;
   width: 50%;
-
+  height: 30%;
 }
 
-.attributes {
-  margin-left: 15px;
+.songs:hover {
+  cursor: pointer;
+  background-color: rgb(228, 204, 217);
 }
 
 .change_song {
@@ -112,6 +72,17 @@ html, body {
   color: #3a2c3a;
 }
 
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
 .present {
   border-radius: 15px;
   width: 400px; 
@@ -122,6 +93,9 @@ html, body {
   justify-content: center;
   align-items: center;
   margin-top: 300px;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0;
 }
 
 .pres {
@@ -131,14 +105,13 @@ html, body {
 .content {
   margin-top: 500px;
   width: 80%;
-  min-height: 900px;
+  min-height: 1100px;
   border-radius: 15px;
   background-color: #f9f9f9ea;   
   box-shadow: 0 4px 20px 26px rgba(181, 128, 181, 0.25);
-}
-
-.my_text {
-
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0;
 }
 
 .pagination {
@@ -151,4 +124,45 @@ html, body {
 
 .pag:hover {
   cursor: pointer;
+}
+
+.us_img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.title_you {
+  font-size: 2rem;
+  color: #3a2c3a;
+  margin-bottom: 20px;
+}
+
+.intense {
+  font-weight: bold;
+}
+
+.heart {
+  margin-top: 70px;
+  width: 200px;
+  height: 200px;
+}
+
+.solittude, .melodies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bench {
+  margin-top: 200px;
+  width: 400px;
+  height: 400px;
+}
+
+.par_us {
+  font-size: 1.1rem;
 }
