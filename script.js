@@ -1,7 +1,10 @@
 let where_am_i = 1;
 
 function next() {
-    if(where_am_i === 5) return;
+    if(where_am_i === 5) {
+        my_message();
+        where_am_i = 1;
+    }
     else if(where_am_i === 1) {
         you();
         where_am_i = 2;
@@ -17,15 +20,14 @@ function next() {
     else if(where_am_i === 4) {
         love();
         where_am_i = 5;
-    } 
-    else if(where_am_i === 5) {
-        love();
-        where_am_i = 6;
     }
 }
 
 function previous() {
-    if(where_am_i === 1) return;
+    if(where_am_i === 1) {
+        love();
+        where_am_i = 5;
+    }
     else if(where_am_i === 2) {
         my_message();
         where_am_i = 1;
@@ -106,7 +108,6 @@ function you() {
                 para los dos, <br> 
                 lo hemos construido juntos. <br>
             </p>
-            <img src="heart.png" alt="heart" class="heart">
         </div>
     `;
 }
@@ -115,30 +116,30 @@ function phrases() {
     container = document.getElementById("my_text");
     container.innerHTML = "";
     container.innerHTML = `
-        <div class="us_img">
-            <p>"<span class="intense">Mágicas </span>son las emociones <br>
+        <div class="my_phrases">
+            <p class="par_u">"<span class="intense">Mágicas </span>son las emociones <br>
                 Que obra en mí una palabra tuya... <br>
                 Que arribando de tus labios <br>
                 Penetra en mi corazón... "<br><br>
             </p>    
-            <p>"Traigo los ojos con que ella miró estas cosas, <br>
+            <p class="par_u">"Traigo los ojos con que ella miró estas cosas, <br>
                 porque me dio sus <span class="intense">ojos</span> para ver."<br>
                 <br>
             </p>
-            <p>"Sie konnte mir kein Wortchen sagen <br>
+            <p class="par_u">"Sie konnte mir kein Wortchen sagen <br>
                 Zu viele Lauscher waren wach, <br>
                 Den Blick nur duft ich schurtern fragen, <br>
                 Und wohl verstand ich, was <span class="intense">sie</span> sagte."<br> <br>
             </p>
-            <p>"...decirle simplemente: <br>
+            <p class="par_u">"...decirle simplemente: <br>
                 te <span class="intense">deseo</span>, ven."<br> <br>
             </p>
-            <p>"When you are smiling, <br>
+            <p class="par_u">"When you are smiling, <br>
                 the whole world, <br>
                 que también vela por su amargura, <br>
                 smiles with <span class="intense">you</span>."<br> <br>
             </p>
-            <p>"Que te he amado únicamente a ti,<br>
+            <p class="par_u">"Que te he amado únicamente a ti,<br>
                 que he entregado todo de mi ser atolondado a ti y a nadie más.<br>
                 Que quiero que tú también me ames y me lo demuestres. <br>
                 Que <span class="intense">amo</span> la forma en que me abrazas, lo cerca de ti que me dejas estar.<br>
@@ -149,15 +150,15 @@ function phrases() {
                 Hablarte y escuchar tu respuesta: <br>
                 Ahí está el cosquilleo del <span class="intense">placer</span>."<br><br>
             </p>
-            <p>"Si cuando me muera me acabo <br>
+            <p class="par_u">"Si cuando me muera me acabo <br>
                 y nada queda de mí, <br>
                 no te olvides de acordarte <br>
                 que sólo te olvidé así."<br> <br>
             </p>
-            <p>"If I know what <span class="intense">love</span> is, <br>
+            <p class="par_u">"If I know what <span class="intense">love</span> is, <br>
                 it is because of you."<br> <br>
             </p>
-            <p>"Say make me, remake me. <br>
+            <p class="par_u">"Say make me, remake me. <br>
             You are free to do it and I am free to let you because <br>
             look, look. Look where your hands are. 
             <span class="intense">Now</span>."<br> <br>
@@ -217,6 +218,7 @@ function love() {
         <div class="solittude">
            <img src="view.png" alt="bench" class="bench">
            <p class="us_img"> <span class="title_you">Con mucho amor</span> </p>
+           <img src="heart.png" alt="heart" class="bench">
         </div>
         `;
 }
